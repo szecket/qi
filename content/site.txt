@@ -1,0 +1,21 @@
+Logo1: assets/images/logos/logoOnDark.svg
+
+----
+
+Logo2: assets/images/logos/logoTextOnDark.svg
+
+----
+
+Title: Kirby Starterkit
+
+----
+
+Author: Bastian Allgeier GmbH
+
+----
+
+Description: This is Kirby's Starterkit.
+
+----
+
+Copyright: © 2016-(date: Year) Quantitative Imaging

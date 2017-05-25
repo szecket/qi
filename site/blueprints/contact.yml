@@ -1,0 +1,59 @@
+title: Contact
+pages: true
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  text:
+    label: Text
+    type:  textarea
+  contactform:
+    label: Contact Form
+    type: headline
+  youremail:
+    label: Your email address
+    type: email
+    help: You'll have to send the form once to verify it when you set an email address
+    required: true
+  namelabel:
+    label: Name label
+    type: text
+    width: 1/2
+    required: true
+  nameplaceholder:
+    label: Name placeholder
+    type: text
+    width: 1/2
+    required: true
+  emaillabel:
+    label: Email label
+    type: text
+    width: 1/2
+    required: true
+  emailplaceholder:
+    label: Email placeholder
+    type: text
+    width: 1/2
+    required: true
+  messagelabel:
+    label: Message label
+    type: text
+    width: 1/2
+    required: true
+  messageplaceholder:
+    label: Message placeholder
+    type: text
+    width: 1/2
+    required: true
+  submitlabel:
+    label: Submit button label
+    type: text
+    width: 1/2
+    required: true
+  successpage:
+    label: Success page
+    type: page
+    width: 1/2
+    required: true
+

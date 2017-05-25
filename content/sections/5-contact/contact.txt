@@ -1,0 +1,65 @@
+Title: Contact
+
+----
+
+Text: 
+
+## Get in touch
+
+- (link: http://getkirby.com/support text: Kirby's support page)
+- (link: http://forum.getkirby.com text: Kirby's forum)
+- (link: http://github.com/getkirby text: Kirby on Github)
+- <support@getkirby.com>
+
+## Follow us on Twitter
+
+- Follow Kirby on Twitter (twitter: @getkirby)
+- Follow Bastian on Twitter (twitter: @bastianallgeier)
+- Follow Nico on Twitter (twitter: @distantnative)
+- Follow Sascha on Twitter (twitter: @sashtown)
+
+## Send us a note directly
+
+----
+
+Youremail: szecket@magrittescow.com
+
+----
+
+Submitlabel: Submit
+
+----
+
+Namelabel: Name
+
+----
+
+Nameplaceholder: John Doe...
+
+----
+
+Emaillabel: Email
+
+----
+
+Emailplaceholder: john@email.com
+
+----
+
+Messagelabel: Message
+
+----
+
+Messageplaceholder: How can we help you?
+
+----
+
+Successpage: contact/message-sent
+
+----
+
+Contactmessage: Thank you for getting in touch.  We're very excited about our future products and we will be in touch with you in the coming days.
+
+----
+
+Snippet: contactform2

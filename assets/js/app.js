@@ -50,7 +50,7 @@ function logoFade() {
 	$('.top-bar-logo #circle2').velocity({fill: color.circle2},{duration:1100});
 	$('.top-bar-logo #circle3').velocity({fill: color.circle3},{duration:1200});
 	$('.top-bar-logo #circle4').velocity({fill: color.circle4},{duration:1300});
-	$('div .top-bar').velocity({'background-color': color.bg},{duration:1400});
+	$('.top-bar').velocity({'background-color': color.bg},{duration:1400});
 
 	$('.bg-cells .i1').velocity({'background-color': colorPicker[Math.floor(Math.random()*6)]},{delay:100,duration:6000});
 	$('.bg-cells .i2').velocity({'background-color': colorPicker[Math.floor(Math.random()*6)]},{delay:1200,duration:500});

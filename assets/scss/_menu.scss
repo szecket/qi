@@ -1,6 +1,7 @@
 $nav-text-color: $white;
 $nav-height: 75px;
 $nav-background: #2c3840;
+$nav-font-size: 1.4rem;
 $offcanvas-padding: 20px;
 $offcanvas-background:$nav-background;
 a {
@@ -12,14 +13,15 @@ a {
 .top-bar {
   position:fixed;
   z-index:2;
-  width:100%;
+  width:100% !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: $nav-background;
   height: $nav-height !important;
+  font-size: $nav-font-size;
   ul {
-    background-color:transparent !important;
+    background-color:transparent;
     li {
       background-color:transparent !important;
     }
@@ -29,16 +31,27 @@ a {
     background:transparent;
     border: none;
   }
+  .top-bar-left {
+    width:100% !important;
+  }
+  .top-bar-title,.top-bar-title-static {
+    position: inherit;
+    margin: 0 auto;
+    font-weight:700;
+    color: $nav-text-color;
+    text-transform: uppercase;
+  }
   .top-bar-logo {
     display:flex;
     align-items: center;
     height:60px;
     min-width: 160px;
     .logo-icon {
-      height:100%;
+      height:120%;
       width:auto;
     }
     .logo-text {
+      display:none;
       height:60%;
       width:auto;
     }
@@ -175,4 +188,21 @@ a {
   &:last-child {
     margin-bottom: 0;
   }
+}
+.hamburger {
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top:  2rem;
+  right:2rem;
+}
+ul.hamburger-bg {
+  background-color:$nav-background;
+}
+.hamburger-menu {
+  top:2rem;
+  right:-2rem;
+  position:absolute;
+  display:none;
 }

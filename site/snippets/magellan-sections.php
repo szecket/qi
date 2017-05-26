@@ -25,11 +25,16 @@ if(isset($limit)) $sections = $sections->limit($limit);
   <?php foreach($sections as $section): ?>
 
     <section id="<?= $section->title()->html() ?>" data-magellan-target="<?= $section->title()->html() ?>">
-    <main class='main' role='main'>
-    <div>
-       <?php if($section->snippet() != '') snippet($section->snippet(),array('data' => $section)); ?>
-    </div>
-    </main>
+      <main class='main' role='main'>
+        <div class='<?= $section->row()?> row' 
+          <?php if($section->background()): ?>
+            style='background-color: <?= $section->background() ?>'
+          <?php endif ?>
+        >
+          <div><?php snippet('section-title',array('data' => $section)); ?></div>
+          <?php if($section->snippet() != '') snippet($section->snippet(),array('data' => $section)); ?>
+        </div>
+      </main>
     </section>
   <?php endforeach ?>
 

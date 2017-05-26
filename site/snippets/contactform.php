@@ -1,5 +1,3 @@
-    <h1><?= $data->title()->html() ?></h1>
-<div class='row'>
 	<div class='large-6 large-centered'
 	<div id="contact-form">
 	  <form method="POST"  action="https://formspree.io/<?php echo $data->youremail()?>">      
@@ -9,6 +7,5 @@
     	<input type="hidden" name="_next" value="<?php echo page($data->successpage()) ?>" />
 	    <input type="submit" class="button" value="<?php echo $data->submitlabel() ?>">  
 	  </form>
-	</div>
 	</div>
 </div>

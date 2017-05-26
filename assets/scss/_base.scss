@@ -1,10 +1,163 @@
+/* -----  1.1 Font Definitions  --------------------------------------------- */
+
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/montserrat-700.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/montserrat-400.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Vesper Libre */
+@font-face {
+  font-family: 'Vesper Libre';
+  src: url(../fonts/vesperlibre-400.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vesper Libre';
+  src: url(../fonts/vesperlibre-500.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vesper Libre';
+  src: url(../fonts/vesperlibre-700.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* The Clearfix™: A classic … */
+.cf::after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+
+/* -----  3.2 Menu  --------------------------------------------------------- */
+
+.menu {
+  text-align: center;
+  font-weight: 500;
+}
+
+.menu-item {
+  display: inline-block;
+}
+
+.menu-item:not(:last-child)::after {
+  content: "⁄";
+  display: inline-block;
+  font-size: .75em;
+  padding: 0 .2em;
+  color: #a8a5be;
+}
+
+.menu-item a {
+  border-bottom: 0;
+}
+
+.menu-item.is-active a {
+  border-bottom: 2px solid #71efac;
+}
+
+@media all and (min-width: 56em) {
+  .menu {
+    text-align: right;
+  }
+}
+
+/* -----  3.3 Sticky Footer  ------------------------------------------------ */
+
+@keyframes pulsing-heart {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.footer {
+	background:$nav-background;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: .875rem;
+  color:$white;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.footer a {
+  border-bottom: 0;
+}
+
+.footer .heart {
+  /* The heart character of Arial Unicode MS looks just 
+     surprisingly nice … */
+  font-family: "Arial Unicode MS", Arial, sans-serif;
+  display: inline-block;
+}
+
+.footer-madewithkirby a:hover .heart {
+  animation: pulsing-heart .6s linear infinite;
+}
+
+@media all and (min-width: 48em) {
+  .footer-copyright, .footer-madewithkirby {
+    display: inline;
+  }
+}
+
+/* -----  3.4 Main Content  ------------------------------------------------- */
+
+.main {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+.main-logo {
+	margin-top:10rem;
+}
+
 section[data-magellan-target] {
 	position:relative;
 }
-h1 {
-	color: white !important;
+
+h1, h2, h3, h4 {
+	font-weight:300;
+	color: $white;
+	text-align: center;
 }
+
+h1 {
+	margin-top:2rem;
+	margin-bottom:3rem;
+}
+
 .bg-cells {
+	z-index:-1;
+	filter:blur(0px);
 	position:fixed;
 	top:0;
 	left:-20%;
@@ -54,4 +207,32 @@ h1 {
 	    margin-left: -512px;   /* 50% */
 	  }
 	}
+}
+p {
+	color: $white;
+}
+.showcase-text {
+	color:$white;
+}
+.showcase-image {
+	width:100%;
+	height:auto;
+}
+.showcase-caption {
+	color:$white;
+	margin-bottom: 2rem;
+	font-style: italic;
+}
+.full-width {
+  width:100%;
+  height:auto;
+}
+
+/* -----  Contact Form   ------------------------------------------------- */
+#contact-form {
+	margin-bottom: 50%;
+}
+
+.display-none {
+  display: none;
 }

@@ -8,8 +8,8 @@
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
   <?= css('assets/css/app.css') ?>
-  <?= css('assets/css/kstarter.css') ?>
-  <?= css('assets/css/jquery.fullpage.min.css') ?>
+  <!-- <?= css('assets/css/kstarter.css') ?> -->
+  <!-- <?= css('assets/css/jquery.fullpage.min.css') ?> -->
 
 </head>
 
@@ -24,15 +24,19 @@
     <div class="top-bar-left">
       <div class='top-bar-logo'>
       <div class='logo-icon'>
-      <?php if( $logo1 = file($site -> logo1()) ): ?>
-        <?php echo reset($logo1) ?>
-      <?php endif ?>
+        <a onclick='scrollToTop()'>
+        <?php if( $logo1 = file($site -> logo1()) ): ?>
+          <?php echo reset($logo1) ?>
+        <?php endif ?>
+        </a>
       </div>
       <div class='logo-text'>
       <?php if( $logo2 = file($site -> logo2()) ): ?>
         <?php echo reset($logo2) ?>
       <?php endif ?>
       </div>
+      <div class='show-for-large top-bar-title-static'>Quantitative Imaging</div>
+      <div class='hide-for-large top-bar-title'>Quantitative Imaging</div>
       </div>
     </div>
     <div class="top-bar-right">
@@ -41,18 +45,22 @@
           <li class='show-for-large'><a href="#<?php echo $p->title() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
         <?php endforeach ?>
           <li class='hide-for-large'>
-            <a>
-              <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-            </a>
-              <ul class="menu vertical">
-                <?php foreach(page('sections')->children()->visible() AS $p): ?>
-                  <li><a href="#<?php echo $p->title() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
-                <?php endforeach ?>
-            </ul>
+            <div class='hamburger'>
+              <a onclick='toggleHamburger()'>
+                <div>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+              </a>
+                <div class='hamburger-menu'>
+                <ul class="menu vertical hamburger-bg">
+                  <?php foreach(page('sections')->children()->visible() AS $p): ?>
+                    <li><a href="#<?php echo $p->title() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
+                  <?php endforeach ?>
+              </ul>
+            </div>
+            </div>
 
           </li>
         </ul>

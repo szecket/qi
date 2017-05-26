@@ -2,19 +2,8 @@ Title: Home
 
 ----
 
-Intro: Yay! If you are seeing this, the installation of Kirby worked. :-)
+Intro: This page demonstrates how you can utilize subpages to store content, like our team members shown below. This approach is especially useful when you have to handle a large number of datasets, many different kinds of data (like page sections) or very complex data with a lot of media files or fields.
 
 ----
 
-Text: 
-
-## Get started
-
-- Go to the (link: panel text: Panel) to give Kirby's admin interface a try
-- Check out the (link: http://getkirby.com/docs text: docs) and start building your own site
-- Follow (twitter: @getkirby) on Twitter for updates
-- Visit the (link: http://forum.getkirby.com text: forum) to connect with other Kirby users
-- Sign up to (link: https://getkirby.com/#kosmos text: Kirby Kosmos), our monthly newsletter
-- (link: http://getkirby.com/support text: Get in contact) if you need support.
-
-**Have fun with Kirby!**
+Text: The approach of using subpages for storing content sections of a page can also be very useful for creating a (link: https://getkirby.com/docs/cookbook/one-pager text: one-page) website, featuring very different kinds of content.

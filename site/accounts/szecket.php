@@ -7,4 +7,5 @@ email: szecket@magrittescow.com
 language: en
 role: admin
 history:
+  - home
   - blog

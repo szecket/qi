@@ -1,6 +1,6 @@
 <?php
 
-$sections = page('sections')->children()->visible();
+$sections = $data->visible();
 
 /*
 

@@ -1,0 +1,21 @@
+Logo1: assets/images/logos/logoOnDark.svg
+
+----
+
+Logo2: assets/images/logos/logoTextOnDark.svg
+
+----
+
+Title: Quantitative Imaging
+
+----
+
+Author: Michel Nederlof
+
+----
+
+Description: The mother of all imaging softwares
+
+----
+
+Copyright: © 2016-(date: Year) Quantitative Imaging

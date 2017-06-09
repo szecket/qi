@@ -8,4 +8,3 @@ language: en
 role: admin
 history:
   - home
-  - blog

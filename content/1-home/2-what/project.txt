@@ -9,7 +9,7 @@ Year:
 Text: 
 
 ###Qi develops imaging software, taking part in large research projects, and developing entertaining apps, with the common goal of advancing its knowledge of how cells and tissue work, what goes wrong in disease, and how to fix those problems.
-
+<br>
 Qi has received several grants related to the application of imaging technology to cancer research. These includes creating a library of millions of phenotypic responses for the NIH LINCS project where cell lines are exposed to specific compounds in their microenvironments, managing the Imaging Core for a new NCI Center for Cancer Systems Biology, and provide image analytics for Measuring, Modeling and Controlling Heterogeneity.
 
 Tissue architectural information can now be preserved to gain high level understanding of spatial concepts, such as tumor nests, islands of resistance, interactions of stroma with metastatic progression, and the effect of each type of immune cell during tumor progression. In general, heterogeneous cell colonies and their spatial relation to neighboring cells are lost in flow and other single cell technologies. Qi software allows the combination of highly multiplexed single cell analysis with whole slide tissue imaging, providing a wealth of information that was previously not possible.

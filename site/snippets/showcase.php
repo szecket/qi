@@ -17,5 +17,5 @@
       <div class='showcase-caption'><?= $image->caption()->html() ?></div>
     </div>
   </div>
-<div class='ghost-box'></div>
 <?php endforeach ?>
+<div class='ghost-box'></div>

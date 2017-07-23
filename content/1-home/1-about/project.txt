@@ -1,12 +1,19 @@
-Title: Explained
+Title: About
 
 ----
 
-Year: 2014
+Year: 
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+Text: 
+
+###*Revolutionizing the way cancer research and drug development is done.*
+<br>
+Quantitative Imaging Systems (Qi) is a small biotechnology business founded in 2011 by Michel Nederlof, a physicist with over 30 years of experience in developing imaging systems, and a passion for unraveling cancer through digital imaging microscopy.
+
+With decades of experience in microscope imaging technology, Qi software is designed with pitch-perfect domain knowledge of microscopy applications that provide solutions for biomedical research, drug development, and ultimately design of treatment plans.  
+Through next generation image analytics and visualization software for digital microscopy, Qi is breaking barriers in resolution, color, and dimensionality.
 
 ----
 
@@ -17,4 +24,4 @@ Landjaeger leberkas beef venison prosciutto, meatball frankfurter rump kevin sha
 
 ----
 
-Snippet: showcase
+Snippet: text-box

@@ -1,0 +1,19 @@
+Title: How
+
+----
+
+Year: 
+
+----
+
+Text: 
+
+**UHCA:**  Ultra High Content Analysis of Single Cells in Tissue. 
+QiTissue software analyzes 100+ biomarker channels in intact tissue, offering researchers a new world of insights into cancer biology, with unprecedented single cell measurement precision. Our highly-multiplexed technology can fully classify cell types, and provide high resolution spatial biomarker expression features. 
+
+**UHCS:**  Ultra High Content Screening. 
+Qi provides services and software to perform very large scale screening projects, leapfrog limitations in measurement channels, increase precision, facilitate analytics, and create novel insights through innovative visualization methods. We provide unique solutions for microtiter plate, whole slide imaging, and Tissue Micro Array analysis compatible with most acquisition platforms.
+
+----
+
+Snippet: text-box

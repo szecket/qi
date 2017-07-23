@@ -30,6 +30,10 @@ $(document).on('update.zf.magellan', '[data-magellan]', function () {
 });
 
 colors = [
+	{page:'qi', main:'#FF2600',ring:'#2BA1A7', circle1: '#ff0000', circle2: '#0000ff', circle3:'#ff00ff', circle4:'#00ffff',bg:'#222', circle5:'#00ff00'},
+	{page:'qi', main:'#44ccaa',ring:'#E3B367', circle1: '#ff0000', circle2: '#0000ff', circle3:'#ff00ff', circle4:'#00ffff',bg:'#222', circle5:'#00ff00'},
+]
+cool_colors = [
 	{page:'qi', main:'#BF3532',ring:'#E3B367', circle1: '#36676C', circle2: '#554A68', circle3:'#312D3B', circle4:'#3C4D57',bg:'#D27843', circle5:'#000'},
 	{page:'qi', main:'#4F4665',ring:'#396B72', circle1: '#C52F2D', circle2: '#E1BF68', circle3:'#E2AC62', circle4:'#B7322D',bg:'#322C3A', circle5:'#000'},
 	{page:'qi', main:'#FF2600',ring:'#2BA1A7', circle1: '#88CCEE', circle2: '#5678DC', circle3:'#8675DB', circle4:'#A5854F',bg:'#2B2210', circle5:'#000'},
@@ -39,7 +43,7 @@ function logoFade() {
 	$('.top-bar-title').html($('.top-bar .active').html());
 	random = Math.floor(Math.random()*(colors.length))
 	color = colors[random]
-	colorPicker = [color.ring,color.circle1,color.circle2,color.circle3,color.bg,color.main];
+	colorPicker = [color.circle1,color.circle2,color.circle3,color.circle4,color.circle5];
 	// console.log('color',random, color)
   $('.hamburger-menu').velocity({opacity:0},{duration:400,display:"none"});
 	$('.bg-cells *').velocity('stop');
@@ -51,16 +55,20 @@ function logoFade() {
 	$('svg #ring').velocity({fill: color.ring},{duration:1500});
 	$('svg #ring').velocity({'transform-origin': '340.5 340.5 0'});
 	$('svg #ring').velocity({rotateZ: "+=360"},{delay:500,duration:1000});
-	$('svg #circle1').velocity({fill: color.circle1},{duration:1000});
-	$('svg #circle2').velocity({fill: color.circle2},{duration:1100});
-	$('svg #circle3').velocity({fill: color.circle3},{duration:1200});
-	$('svg #circle4').velocity({fill: color.circle4},{duration:1300});
+	var rc1= colorPicker[Math.floor(Math.random()*6)];
+	var rc2= colorPicker[Math.floor(Math.random()*6)];
+	var rc3= colorPicker[Math.floor(Math.random()*6)];
+	var rc4= colorPicker[Math.floor(Math.random()*6)];
+	$('svg #circle1').velocity({fill: rc1},{duration:1000});
+	$('svg #circle2').velocity({fill: rc2},{duration:1100});
+	$('svg #circle3').velocity({fill: rc3},{duration:1200});
+	$('svg #circle4').velocity({fill: rc4},{duration:1300});
 	$('.top-bar,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
 
-	$('.bg-cells .i1').velocity({'background-color': colorPicker[Math.floor(Math.random()*6)]},{delay:100,duration:6000});
-	$('.bg-cells .i2').velocity({'background-color': colorPicker[Math.floor(Math.random()*6)]},{delay:1200,duration:500});
-	$('.bg-cells .i3').velocity({'background-color': colorPicker[Math.floor(Math.random()*6)]},{delay:1200,duration:500});
-	$('.bg-cells .i4').velocity({'background-color': colorPicker[Math.floor(Math.random()*6)]},{delay:1200,duration:1000});
+	$('.bg-cells .i1').velocity({'background-color': rc1},{delay:100,duration:6000});
+	$('.bg-cells .i2').velocity({'background-color': rc2},{delay:1200,duration:500});
+	$('.bg-cells .i3').velocity({'background-color': rc3},{delay:1200,duration:500});
+	$('.bg-cells .i4').velocity({'background-color': rc4},{delay:1200,duration:1000});
 
 	// $('.bg-cells .i4').velocity({opacity:0},{delay:200, duration:1400, loop:3});
 	$('.top-bar a').velocity({color:color.ring},{duration:400});

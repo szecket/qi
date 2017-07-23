@@ -131,6 +131,16 @@
 }
 
 /* -----  3.4 Main Content  ------------------------------------------------- */
+.ghost-box {
+  background-color:black;
+  opacity:0.6;
+  width:100%;
+  position:absolute;
+  top:80px;
+  z-index:-1;
+  left:0;
+  height:100%;
+}
 
 .main {
   padding-top: 6rem;
@@ -142,6 +152,7 @@
 
 section[data-magellan-target] {
 	position:relative;
+  margin-bottom:10rem;
 }
 
 h1, h2, h3, h4 {
@@ -202,6 +213,7 @@ h1 {
 }
 p {
 	color: $white;
+  font-size:$paragraph-font-size;
 }
 .showcase-text {
 	color:$white;

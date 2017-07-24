@@ -22,6 +22,15 @@ $(document).ready(function() {
 	// 	},
 	// 	slidesNavigation: true
 	// });
+var rc1= colorPicker[Math.floor(Math.random()*6)];
+var rc2= colorPicker[Math.floor(Math.random()*6)];
+var rc3= colorPicker[Math.floor(Math.random()*6)];
+var rc4= colorPicker[Math.floor(Math.random()*6)];
+$('.bg-cells .i1').css('background-color', rc1);
+$('.bg-cells .i2').css('background-color', rc2);
+$('.bg-cells .i3').css('background-color', rc3);
+$('.bg-cells .i4').css('background-color', rc4);
+
 });
 
 $(document).on('update.zf.magellan', '[data-magellan]', function () {
@@ -64,7 +73,7 @@ background_images = [
 	'',
 	'',
 	'',
-]
+];
 function logoFade() {
 	$('.top-bar-title').html($('.top-bar .active').html());
 	random = Math.floor(Math.random()*(colors.length))
@@ -85,33 +94,58 @@ function logoFade() {
 	var rc2= colorPicker[Math.floor(Math.random()*6)];
 	var rc3= colorPicker[Math.floor(Math.random()*6)];
 	var rc4= colorPicker[Math.floor(Math.random()*6)];
-	var i1 = background_images[Math.floor(Math.random()*background_images.length)];
-	var i2 = background_images[Math.floor(Math.random()*background_images.length)];
-	var i3 = background_images[Math.floor(Math.random()*background_images.length)];
-	var i4 = background_images[Math.floor(Math.random()*background_images.length)];
-	console.log(i1,i2,i3,i4);
 	$('svg #circle1').velocity({fill: rc1},{duration:1000});
 	$('svg #circle2').velocity({fill: rc2},{duration:1100});
 	$('svg #circle3').velocity({fill: rc3},{duration:1200});
 	$('svg #circle4').velocity({fill: rc4},{duration:1300});
 	$('.top-bar,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
-	$('.bg-cells .i1').velocity("fadeOut", { duration: 500 }).velocity({'background-color': rc1},{delay:100,duration:6000}).velocity("fadeIn", { duration: 1000 });
-	$('.bg-cells .i1').delay(700).css("background-image", i1);
-	$('.bg-cells .i2').velocity("fadeOut", { delay: 300, duration: 1500 }).velocity({'background-color': rc2},{delay:1200,duration:500}).velocity("fadeIn", { duration: 3000 });
-	$('.bg-cells .i2').delay(2000).css("background-image", i2);
-	$('.bg-cells .i3').velocity("fadeOut", { duration: 3000 }).velocity({'background-color': rc3},{delay:1200,duration:500}).velocity("fadeIn", { duration: 500 });
-	$('.bg-cells .i3').delay(3200).css("background-image", i3);
-	$('.bg-cells .i4').velocity("fadeOut", { duration: 2000 }).velocity({'background-color': rc4},{delay:1200,duration:1000}).velocity("fadeIn", { duration: 500 });
-	$('.bg-cells .i4').delay(2200).css("background-image", i4);
+	$('.bg-cells .i1')
+		.velocity('complete')
+		.velocity("fadeOut", 800,function(){
+			newBg = background_images[Math.floor(Math.random()*background_images.length)];
+			console.log('newBG',newBg);
+			$('.bg-cells .i1').css("background-image", newBg);
+		})
+		.velocity("fadeIn", { duration: 1000 })
+		.velocity({'background-color': rc1},{delay:100,duration:6000});
+	
+	$('.bg-cells .i2')
+		.velocity('complete')
+		.velocity("fadeOut", 1200,function(){
+			newBg = background_images[Math.floor(Math.random()*background_images.length)];
+			console.log('newBG',newBg);
+			$('.bg-cells .i2').css("background-image", newBg);
+		})
+		.velocity("fadeIn", { delay:500, duration: 1200 })
+		.velocity({'background-color': rc2},{delay:100,duration:3000});
 
-	// $('.bg-cells .i4').velocity({opacity:0},{delay:200, duration:1400, loop:3});
+	$('.bg-cells .i3')
+		.velocity('complete')
+		.velocity("fadeOut", 4200,function(){
+			newBg = background_images[Math.floor(Math.random()*background_images.length)];
+			console.log('newBG',newBg);
+			$('.bg-cells .i3').css("background-image", newBg);
+		})
+		.velocity("fadeIn", { delay:1500, duration: 1100 })
+		.velocity({'background-color': rc3},{delay:100,duration:2000});
+
+	$('.bg-cells .i4')
+		.velocity('complete')
+		.velocity("fadeOut", 5200,function(){
+			newBg = background_images[Math.floor(Math.random()*background_images.length)];
+			console.log('newBG',newBg);
+			$('.bg-cells .i4').css("background-image", newBg);
+		})
+		.velocity("fadeIn", { delay:4500, duration: 1800 })
+		.velocity({'background-color': rc4},{delay:1000,duration:1500});
+
 	$('.top-bar a').velocity({color:color.ring},{duration:400});
 	$('a.active,.top-bar-title,.top-bar-title-static').velocity({color:color.main},{duration:500});
 	$('input.button').velocity({'background-color':color.main},{duration:500});
 }
 
 function rollover(item){
-	$(item).velocity({ blur: 0 }, {duration:400});
+	$(item).velocity({ blur: 5 }, {duration:400});
 }
 
 function scrollToTop(){

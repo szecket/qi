@@ -39,6 +39,31 @@ cool_colors = [
 	{page:'qi', main:'#FF2600',ring:'#2BA1A7', circle1: '#88CCEE', circle2: '#5678DC', circle3:'#8675DB', circle4:'#A5854F',bg:'#2B2210', circle5:'#000'},
 	{page:'qi', main:'#DCB044',ring:'#2EB3B4', circle1: '#C93A27', circle2: '#DCB044', circle3:'#E77B20', circle4:'#C93A27',bg:'#2c3840', circle5:'#000'},
 ]
+background_images = [
+	'url(/assets/images/value/CK17.jpg)',
+	'url(/assets/images/value/actin.jpg)',
+	'url(/assets/images/value/aSMA.jpg)',
+	'url(/assets/images/value/CD44.jpg)',
+	'url(/assets/images/value/CK5.jpg)',
+	'url(/assets/images/value/CK8+18.jpg)',
+	'url(/assets/images/value/CK14.jpg)',
+	'url(/assets/images/value/CK17.jpg)',
+	'url(/assets/images/value/CK19.jpg)',
+	'url(/assets/images/value/CoxIV.jpg)',
+	'url(/assets/images/value/DAPI.jpg)',
+	'url(/assets/images/value/E-Cad.jpg)',
+	'url(/assets/images/value/ER.jpg)',
+	'url(/assets/images/value/Her2.jpg)',
+	'url(/assets/images/value/Ki67.jpg)',
+	'url(/assets/images/value/tubulin.jpg)',
+	'url(/assets/images/value/VMT.jpg)',
+	'',
+	'',
+	'',
+	'',
+	'',
+	'',
+]
 function logoFade() {
 	$('.top-bar-title').html($('.top-bar .active').html());
 	random = Math.floor(Math.random()*(colors.length))
@@ -59,16 +84,24 @@ function logoFade() {
 	var rc2= colorPicker[Math.floor(Math.random()*6)];
 	var rc3= colorPicker[Math.floor(Math.random()*6)];
 	var rc4= colorPicker[Math.floor(Math.random()*6)];
+	var i1 = background_images[Math.floor(Math.random()*background_images.length)];
+	var i2 = background_images[Math.floor(Math.random()*background_images.length)];
+	var i3 = background_images[Math.floor(Math.random()*background_images.length)];
+	var i4 = background_images[Math.floor(Math.random()*background_images.length)];
+	console.log(i1,i2,i3,i4);
 	$('svg #circle1').velocity({fill: rc1},{duration:1000});
 	$('svg #circle2').velocity({fill: rc2},{duration:1100});
 	$('svg #circle3').velocity({fill: rc3},{duration:1200});
 	$('svg #circle4').velocity({fill: rc4},{duration:1300});
 	$('.top-bar,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
-
-	$('.bg-cells .i1').velocity({'background-color': rc1},{delay:100,duration:6000});
-	$('.bg-cells .i2').velocity({'background-color': rc2},{delay:1200,duration:500});
-	$('.bg-cells .i3').velocity({'background-color': rc3},{delay:1200,duration:500});
-	$('.bg-cells .i4').velocity({'background-color': rc4},{delay:1200,duration:1000});
+	$('.bg-cells .i1').velocity("fadeOut", { duration: 500 }).velocity({'background-color': rc1},{delay:100,duration:6000}).velocity("fadeIn", { duration: 1000 });
+	$('.bg-cells .i1').delay(700).css("background-image", i1);
+	$('.bg-cells .i2').velocity("fadeOut", { delay: 300, duration: 1500 }).velocity({'background-color': rc2},{delay:1200,duration:500}).velocity("fadeIn", { duration: 3000 });
+	$('.bg-cells .i2').delay(2000).css("background-image", i2);
+	$('.bg-cells .i3').velocity("fadeOut", { duration: 3000 }).velocity({'background-color': rc3},{delay:1200,duration:500}).velocity("fadeIn", { duration: 500 });
+	$('.bg-cells .i3').delay(3200).css("background-image", i3);
+	$('.bg-cells .i4').velocity("fadeOut", { duration: 2000 }).velocity({'background-color': rc4},{delay:1200,duration:1000}).velocity("fadeIn", { duration: 500 });
+	$('.bg-cells .i4').delay(2200).css("background-image", i4);
 
 	// $('.bg-cells .i4').velocity({opacity:0},{delay:200, duration:1400, loop:3});
 	$('.top-bar a').velocity({color:color.ring},{duration:400});

@@ -18,4 +18,4 @@ Description: The mother of all imaging softwares
 
 ----
 
-Copyright: © 2016-(date: Year) Quantitative Imaging
+Copyright: © 2011-2017 Quantitative Imaging Systems             QiTissue is a trademark of Quantitative Imaging Systems

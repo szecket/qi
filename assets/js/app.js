@@ -32,6 +32,7 @@ $(document).on('update.zf.magellan', '[data-magellan]', function () {
 colors = [
 	{page:'qi', main:'#FF2600',ring:'#2BA1A7', circle1: '#ff0000', circle2: '#0000ff', circle3:'#ff00ff', circle4:'#00ffff',bg:'#222', circle5:'#00ff00'},
 	{page:'qi', main:'#44ccaa',ring:'#E3B367', circle1: '#ff0000', circle2: '#0000ff', circle3:'#ff00ff', circle4:'#00ffff',bg:'#222', circle5:'#00ff00'},
+	{page:'qi', main:'#4484C3',ring:'#0E7B5B', circle1: '#901613', circle2: '#C1381A', circle3:'#EEEFF1', circle4:'#C4CC29',bg:'#343173', circle5:'#4484C3'},
 ]
 cool_colors = [
 	{page:'qi', main:'#BF3532',ring:'#E3B367', circle1: '#36676C', circle2: '#554A68', circle3:'#312D3B', circle4:'#3C4D57',bg:'#D27843', circle5:'#000'},

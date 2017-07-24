@@ -100,7 +100,7 @@ function logoFade() {
 	$('svg #circle4').velocity({fill: rc4},{duration:1300});
 	$('.top-bar,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
 	$('.bg-cells .i1')
-		.velocity('complete')
+		.velocity('stop')
 		.velocity("fadeOut", 800,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
@@ -110,7 +110,7 @@ function logoFade() {
 		.velocity({'background-color': rc1},{delay:100,duration:6000});
 	
 	$('.bg-cells .i2')
-		.velocity('complete')
+		.velocity('stop')
 		.velocity("fadeOut", 1200,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
@@ -120,7 +120,7 @@ function logoFade() {
 		.velocity({'background-color': rc2},{delay:100,duration:3000});
 
 	$('.bg-cells .i3')
-		.velocity('complete')
+		.velocity('stop')
 		.velocity("fadeOut", 4200,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
@@ -130,7 +130,7 @@ function logoFade() {
 		.velocity({'background-color': rc3},{delay:100,duration:2000});
 
 	$('.bg-cells .i4')
-		.velocity('complete')
+		.velocity('stop')
 		.velocity("fadeOut", 5200,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);

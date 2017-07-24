@@ -8,3 +8,7 @@ password: >
   $2a$10$lfOhML/6fO8LFjTVcjHKsOlmcD0hd36fCwYTtaiNjy7BOqZ5UzCvi
 language: en
 role: admin
+history:
+  - home/what
+  - home/about
+  - home

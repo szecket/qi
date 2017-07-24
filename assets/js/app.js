@@ -79,7 +79,7 @@ function logoFade() {
 	$('svg #tissue path').velocity({fill: color.main},{duration:1400});
 	$('svg #ring').velocity({fill: color.ring},{duration:1500});
 	$('svg #ring').velocity({'transform-origin': '340.5 340.5 0'});
-	$('svg #ring').velocity({rotateZ: "+=360"},{delay:500,duration:1000});
+	$('svg #ring').velocity({rotateZ: "360deg"},{delay:500,duration:1000}).velocity({rotateZ: "0deg"},{duration:0});
 	var rc1= colorPicker[Math.floor(Math.random()*6)];
 	var rc2= colorPicker[Math.floor(Math.random()*6)];
 	var rc3= colorPicker[Math.floor(Math.random()*6)];

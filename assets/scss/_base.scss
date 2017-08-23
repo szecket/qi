@@ -137,8 +137,8 @@
   width:100%;
   position:absolute;
   top:80px;
-  z-index:-1;
-  left:0;
+  z-index:1;
+  left:2;
   height:100%;
 }
 
@@ -148,11 +148,13 @@
 }
 .main-logo {
 	margin-top:10rem;
+  z-index:2;
 }
 
 section[data-magellan-target] {
 	position:relative;
   margin-bottom:30rem;
+  z-index:1;
 }
 #Contact {
    margin-bottom: 0; 

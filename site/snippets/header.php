@@ -43,7 +43,7 @@
     <div class="top-bar-right">
       <ul class="dropdown menu" data-magellan >
         <?php foreach($page->children()->visible() AS $p): ?>
-          <li class='show-for-large'><a href="#<?php echo $p->title() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
+          <li class='show-for-large'><a href="#<?php echo $p->title() ?>"><?php echo html($p->title()) ?></a></li>
         <?php endforeach ?>
           <li class='hide-for-large'>
             <div class='hamburger'>
@@ -57,7 +57,7 @@
                 <div class='hamburger-menu'>
                 <ul class="menu vertical hamburger-bg">
                   <?php foreach($page->children()->visible() AS $p): ?>
-                    <li><a href="#<?php echo $p->title() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
+                    <li><a href="#<?php echo $p->title() ?>"><?php echo html($p->title()) ?></a></li>
                   <?php endforeach ?>
               </ul>
             </div>

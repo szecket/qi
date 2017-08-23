@@ -1,3 +1,4 @@
+<div class='ghost-box'></div>
 <?php foreach($data->images()->sortBy('sort', 'asc') as $image): ?>
   <div class="show-for-large cf">
     <div class='large-3 columns'>
@@ -18,4 +19,3 @@
     </div>
   </div>
 <?php endforeach ?>
-<div class='ghost-box'></div>

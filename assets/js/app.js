@@ -101,17 +101,17 @@ function logoFade() {
 	$('.top-bar,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
 	$('.bg-cells .i1')
 		.velocity('stop')
-		.velocity("fadeOut", 500,function(){
+		.velocity("fadeOut", 900 ,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
 			$('.bg-cells .i1').css("background-image", newBg);
 		})
 		.velocity("fadeIn", { duration: 1000 })
-		.velocity({'background-color': rc1},{delay:100,duration:6000});
+		.velocity({'background-color': rc1},{delay:1000,duration:2000});
 	
 	$('.bg-cells .i2')
 		.velocity('stop')
-		.velocity("fadeOut", 200,function(){
+		.velocity("fadeOut", 1900,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
 			$('.bg-cells .i2').css("background-image", newBg);
@@ -121,7 +121,7 @@ function logoFade() {
 
 	$('.bg-cells .i3')
 		.velocity('stop')
-		.velocity("fadeOut", 750,function(){
+		.velocity("fadeOut", 300 ,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
 			$('.bg-cells .i3').css("background-image", newBg);
@@ -131,7 +131,7 @@ function logoFade() {
 
 	$('.bg-cells .i4')
 		.velocity('stop')
-		.velocity("fadeOut", 550,function(){
+		.velocity("fadeOut", 1550,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
 			$('.bg-cells .i4').css("background-image", newBg);
@@ -142,6 +142,7 @@ function logoFade() {
 	$('.top-bar a').velocity({color:color.ring},{duration:400});
 	$('a.active,.top-bar-title,.top-bar-title-static').velocity({color:color.main},{duration:500});
 	$('input.button').velocity({'background-color':color.main},{duration:500});
+	$('.ghost-box').css('z-index',-1);
 }
 
 function rollover(item){

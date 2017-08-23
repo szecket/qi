@@ -101,7 +101,7 @@ function logoFade() {
 	$('.top-bar,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
 	$('.bg-cells .i1')
 		.velocity('stop')
-		.velocity("fadeOut", 800,function(){
+		.velocity("fadeOut", 500,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
 			$('.bg-cells .i1').css("background-image", newBg);
@@ -111,33 +111,33 @@ function logoFade() {
 	
 	$('.bg-cells .i2')
 		.velocity('stop')
-		.velocity("fadeOut", 1200,function(){
+		.velocity("fadeOut", 200,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
 			$('.bg-cells .i2').css("background-image", newBg);
 		})
-		.velocity("fadeIn", { delay:500, duration: 1200 })
-		.velocity({'background-color': rc2},{delay:100,duration:3000});
+		.velocity("fadeIn", { delay:300, duration: 900 })
+		.velocity({'background-color': rc2},{delay:100,duration:1100});
 
 	$('.bg-cells .i3')
 		.velocity('stop')
-		.velocity("fadeOut", 4200,function(){
+		.velocity("fadeOut", 750,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
 			$('.bg-cells .i3').css("background-image", newBg);
 		})
-		.velocity("fadeIn", { delay:1500, duration: 1100 })
-		.velocity({'background-color': rc3},{delay:100,duration:2000});
+		.velocity("fadeIn", { delay:350, duration: 900 })
+		.velocity({'background-color': rc3},{delay:100,duration:900});
 
 	$('.bg-cells .i4')
 		.velocity('stop')
-		.velocity("fadeOut", 5200,function(){
+		.velocity("fadeOut", 550,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
 			console.log('newBG',newBg);
 			$('.bg-cells .i4').css("background-image", newBg);
 		})
-		.velocity("fadeIn", { delay:4500, duration: 1800 })
-		.velocity({'background-color': rc4},{delay:1000,duration:1500});
+		.velocity("fadeIn", { delay:800, duration: 800 })
+		.velocity({'background-color': rc4},{delay:700,duration:500});
 
 	$('.top-bar a').velocity({color:color.ring},{duration:400});
 	$('a.active,.top-bar-title,.top-bar-title-static').velocity({color:color.main},{duration:500});
@@ -163,29 +163,42 @@ function toggleHamburger(){
   $('.hamburger-menu').velocity({opacity:1},{duration:400,display:"block"});
   $('.hamburger-menu').velocity({opacity:0},{delay:3000,duration:400,display:"none"});
 }
-$('#contact-form').submit(function(e) {
+var $contactForm = $('#contact-form');
+
+$contactForm.submit(function(e) {
+	e.preventDefault();
+	var $submit = $('input:submit', $contactForm);
+	var defaultSubmitText = $submit.val();
     var name = $('#inputName')
     var email = $('#inputEmail')
     var message = $('#inputMessage')
-  
-    if(name.val() == "" || email.val() == "" || message.val() == "") {
-      $('.submit-fail').fadeToggle(400);
-      return false;
-    }
-    else {
-      $.ajax({
-        method: 'POST',
-        url: 'https://formspree.io/szecket@magrittescow.com',
-        data: $('#contact-form').serialize(),
-        datatype: 'json'
-      });
-      e.preventDefault();
-      $(this).get(0).reset();
+    var serial = {'name':name.val(),'email':email.val(),'message':message.val()};
+	  var recipient = 'nederlofontheroad@me.com'
+	$.ajax({
+		url: '//formspree.io/' + recipient,
+		method: 'POST',
+		data: serial,
+		dataType: 'json',
+		beforeSend: function() {
+			//$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+			$submit.attr('disabled', true).val('Sending message…');
+		},
+		success: function(data) {
+			//$contactForm.append('<div class="alert alert--success">Message sent!</div>');
       $('.submit-success').fadeToggle(400);
       $('.submit-form').fadeToggle(400);
-    }
-  });
-
+		},
+		error: function(err) {
+			//$contactForm.find('.alert--loading').hide();
+			//$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+			$submit.val('Ops, there was an error.');
+			setTimeout(function() {
+				//$('.alert--error').remove();
+				$submit.attr('disabled', false).val(defaultSubmitText);
+			}, 5000);
+		}
+	});
+});
 $('.submit-fail, .submit-success').click(function() {
   $(this).hide();
 })

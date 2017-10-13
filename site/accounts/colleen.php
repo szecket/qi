@@ -5,6 +5,6 @@ firstname: Colleen
 lastname: ""
 email: colleen_coll@hotmail.com
 password: >
-  $2a$10$yoOvlnkJneAWAnt7uGp0q.hcvoBFzd4OEWSKDGoEOZ4u2lnX0.WwO
+  $2a$10$zy0x3XkQsjmLSZUVmcAX7e//DNghG4gzGB1LhFz2RMRdJOlVl.X3.
 language: en
 role: admin

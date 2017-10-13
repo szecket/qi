@@ -9,6 +9,7 @@ password: >
 language: en
 role: admin
 history:
+  - home/Contact
   - home/what
   - home/about
   - home

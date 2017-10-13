@@ -12,7 +12,9 @@ Text:
 <br>
 Quantitative Imaging Systems (Qi) is a biotechnology business founded in 2011 by Michel Nederlof, a physicist with over 30 years of experience in developing imaging systems, and a passion for unraveling cancer through digital imaging microscopy.
 
-With decades of experience in microscope imaging technology, Qi software is designed with pitch-perfect domain knowledge of microscopy applications that provide solutions for biomedical research, drug development, and ultimately design of patient treatment plans.  Through next generation image analytics and visualization software for digital microscopy, Qi is breaking barriers in resolution, color, and dimensionality.
+With decades of experience in microscope imaging technology, Qi software is designed with pitch-perfect domain knowledge of microscopy applications that provide solutions for biomedical research, drug development, and ultimately design of patient treatment plans.  By combining next generation image analytics and visualization technologies, with recent advances in reagents and optics, Qi is breaking barriers in resolution, color, and dimensionality. 
+
+Tissue architectural information can now be augmented with highly multiplexed single cell analysis, providing a wealth of information that was previously not available. QiTissue combines the power of cell based analytics, machine learning, and visualization. This enables unprecedented insights into spatial concepts, such as tumor nests, islands of resistance, interactions with stroma during metastatic progression, and the effect of each type of immune cell.
 
 ----
 

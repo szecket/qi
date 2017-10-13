@@ -2,7 +2,7 @@ Title: Contact
 
 ----
 
-Text: We welcome requests for collaborations, early adopters of our technology, or talented individuals to become part of our team.  You can also reach us on <div class='active'>(link:  https://twitter.com/QiCyto text: twitter)</div>
+Text: We welcome requests for collaborations, early adopters of our technology, or talented individuals to become part of our team.  You can also reach us on <span class="active"><strong> (link:  https://twitter.com/QiCyto text: twitter)</strong></span>
 
 ----
 

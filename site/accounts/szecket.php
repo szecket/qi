@@ -8,7 +8,7 @@ language: en
 role: admin
 history:
   - home/Contact
+  - home/news
+  - home/news/cool-thing-happened
   - home/what
   - home/about
-  - home/how
-  - home/who

@@ -1,4 +1,5 @@
-  <div class='small-14 medium-6 large-4 small-centered'>
+<p class='brightlink'><?= $data->text()->kirbytext() ?></p>
+<div class='small-14 medium-6 large-4 small-centered'>
   <!-- <div id="contact-form"> -->
   <form class='submit-form'  method="post" action='action="https://formspree.io/<?php echo $data->youremail()?>' id='contact-form'>
   <!-- <form class='submit-form' method="POST"  action="https://formspree.io/<?php echo $data->youremail()?>"> -->

@@ -1,0 +1,13 @@
+Title: News
+
+----
+
+Perpage: 10
+
+----
+
+Text: this thing needs to be updated
+
+----
+
+Info: 

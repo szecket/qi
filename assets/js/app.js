@@ -140,7 +140,7 @@ function logoFade() {
 		.velocity({'background-color': rc4},{delay:700,duration:500});
 
 	$('.top-bar a').velocity({color:color.ring},{duration:400});
-	$('a.active,.top-bar-title,.top-bar-title-static').velocity({color:color.main},{duration:500});
+	$('span.active a, a.active,.top-bar-title,.top-bar-title-static').velocity({color:color.main},{duration:500});
 	$('input.button').velocity({'background-color':color.main},{duration:500});
 	$('.ghost-box').css('z-index',-1);
 }

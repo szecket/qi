@@ -37,7 +37,4 @@ if(isset($limit)) $sections = $sections->limit($limit);
       </main>
     </section>
   <?php endforeach ?>
-
-
-
   </div>

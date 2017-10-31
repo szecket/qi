@@ -43,7 +43,11 @@
     <div class="top-bar-right">
       <ul class="dropdown menu" data-magellan >
         <?php foreach($page->children()->visible() AS $p): ?>
-          <li class='show-for-large'><a href="#<?php echo $p->title() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
+          <?php if($p->redirect() == 'true'): ?>
+            <li class='show-for-large'><a href="<?php echo $p->text() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
+          <?php else: ?>
+            <li class='show-for-large'><a href="#<?php echo $p->title() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
+          <?php endif ?>
         <?php endforeach ?>
           <li class='hide-for-large'>
             <div class='hamburger'>

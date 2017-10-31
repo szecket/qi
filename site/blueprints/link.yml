@@ -1,0 +1,11 @@
+title: Link
+
+fields:
+  text:
+    label: Text
+    type:  text
+
+  snippet:
+    label: snippet
+    select:
+      link: link

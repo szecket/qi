@@ -45,7 +45,9 @@
   overflow: hidden;
   clear: both;
 }
-
+.hide {
+  display: none;
+}
 .rounded-button {
   height: 28px;
   border-radius: 4px;

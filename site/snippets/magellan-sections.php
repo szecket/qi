@@ -23,8 +23,7 @@ if(isset($limit)) $sections = $sections->limit($limit);
 <div class="sections">
 
   <?php foreach($sections as $section): ?>
-
-    <section id="<?= $section->title()->html() ?>" data-magellan-target="<?= $section->title()->html() ?>">
+    <section class="<?php if ($section->redirect()=='true'): ?>hide<?php endif ?>" id="<?= $section->title()->html() ?>" data-magellan-target="<?= $section->title()->html() ?>">
       <main class='main' role='main'>
         <div class='<?= $section->row()?> row' 
           <?php if($section->background()): ?>

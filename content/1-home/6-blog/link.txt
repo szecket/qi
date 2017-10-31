@@ -6,4 +6,4 @@ Text: http://qitissue.blog/blog/
 
 ----
 
-redirect: true
+Redirect: true

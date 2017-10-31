@@ -1,19 +1,21 @@
-<?php snippet('header') ?>
+<?php if(! $page->redirect()): ?>
+  <?php snippet('header') ?>
 
-  <main class="main" role="main">
+    <main class="main" role="main">
 
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>
-      <div class="intro text">
-        <?= $page->text()->kirbytext() ?>
+      <header class="wrap">
+        <h1><?= $page->title()->html() ?></h1>
+        <div class="intro text">
+          <?= $page->text()->kirbytext() ?>
+        </div>
+        <hr />
+      </header>
+        
+      <div class="wrap wide">    
+        <?php snippet('showcase') ?>
       </div>
-      <hr />
-    </header>
-      
-    <div class="wrap wide">    
-      <?php snippet('showcase') ?>
-    </div>
 
-  </main>
+    </main>
 
-<?php snippet('footer') ?>
+  <?php snippet('footer') ?>
+<?php endif ?>

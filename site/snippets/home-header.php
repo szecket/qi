@@ -61,7 +61,11 @@
                 <div class='hamburger-menu'>
                 <ul class="menu vertical hamburger-bg">
                   <?php foreach($page->children()->visible() AS $p): ?>
-                    <li><a href="#<?php echo $p->title() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
+                    <?php if($p->redirect() == 'true'): ?>
+                      <li><a href="<?php echo $p->text() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
+                    <?php else: ?>
+                      <li><a href="#<?php echo $p->title() ?>"  onclick="logoFade()"><?php echo html($p->title()) ?></a></li>
+                    <?php endif ?>
                   <?php endforeach ?>
               </ul>
             </div>

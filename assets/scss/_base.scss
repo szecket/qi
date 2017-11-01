@@ -262,3 +262,18 @@ p {
   display: none;
 }
 
+.linkedin {
+  margin-left:1rem;
+  border-radius:2px;
+  padding: 4px;
+  width:auto;
+  height:28px;
+  background:#0077b5;
+}
+.IN-followcompany {
+  height:26px;
+  &.IN-logo {
+    background-size: 145px;
+  }
+}
+

@@ -5,24 +5,7 @@ Title: Contact
 Text: 
 
 We welcome requests for collaborations, early adopters of our technology, or talented individuals to become part of our team.
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=379290012440045';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div style="display:flex">
-<div><a href="https://twitter.com/qi_tissue?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @qi_tissue</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-
-<div style="margin-left:1rem" class="fb-follow" data-href="https://www.facebook.com/qitissue" data-layout="button_count" data-size="large" data-show-faces="false"></div>
-
-<div class='linkedin'><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/FollowCompany" data-id="18322543"></script></div>
-</div>
+<br>
 
 ----
 

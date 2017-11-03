@@ -158,6 +158,12 @@
   height:100%;
 }
 
+.float-center {
+  display:table;
+  .social-media {
+    margin: 0 0.5rem;
+  }
+}
 .main {
   padding-top: 6rem;
   padding-bottom: 1.5rem;
@@ -235,6 +241,11 @@ h1 {
 p {
 	color: $white;
   font-size:$paragraph-font-size;
+}
+.social-media {
+  width:40px;
+  height:40px;
+  display:inline-block;
 }
 .showcase-text {
 	color:$white;

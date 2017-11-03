@@ -1,3 +1,8 @@
+<div class='float-center'>
+  <div class='social-media'><a href="https://twitter.com/qi_tissue"><img src="/assets/images/logos/twitter-icon.png"></a></div>
+  <div class='social-media'><a href="https://facebook.com/qitissue/"><img src="/assets/images/logos/facebook-icon.png"></a></div>
+  <div class='social-media'><a href="https://www.linkedin.com/company/18322543/"><img src="/assets/images/logos/linkedin-icon.png"></a></div>
+</div>
 <p class='brightlink'><?= $data->text()->kirbytext() ?></p>
 <div class='small-14 medium-6 large-4 small-centered'>
   <!-- <div id="contact-form"> -->

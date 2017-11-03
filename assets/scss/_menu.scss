@@ -41,6 +41,9 @@ a {
     color: $nav-text-color;
     text-transform: uppercase;
   }
+  .top-bar-title {
+    font-size:1rem;
+  }
   .top-bar-logo {
     display:flex;
     align-items: center;

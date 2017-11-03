@@ -1,5 +1,5 @@
 $(document).foundation();
-sections = ['Explained','Partners','Philosophy','Products','Contact'];
+sections = ['About','What','Who','Contact'];
 $(document).ready(function() {
 	logoFade();
 	// $('#fullpage').fullpage({

@@ -98,7 +98,7 @@ function logoFade() {
 	$('svg #circle2').velocity({fill: rc2},{duration:1100});
 	$('svg #circle3').velocity({fill: rc3},{duration:1200});
 	$('svg #circle4').velocity({fill: rc4},{duration:1300});
-	$('.top-bar,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
+	$('.top-bar,.slideUp,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
 	$('.bg-cells .i1')
 		.velocity('stop')
 		.velocity("fadeOut", 900 ,function(){
@@ -108,7 +108,7 @@ function logoFade() {
 		})
 		.velocity("fadeIn", { duration: 1000 })
 		.velocity({'background-color': rc1},{delay:1000,duration:2000});
-	
+
 	$('.bg-cells .i2')
 		.velocity('stop')
 		.velocity("fadeOut", 1900,function(){
@@ -139,7 +139,7 @@ function logoFade() {
 		.velocity("fadeIn", { delay:800, duration: 800 })
 		.velocity({'background-color': rc4},{delay:700,duration:500});
 
-	$('.top-bar a').velocity({color:color.ring},{duration:400});
+	$('.top-bar a, .slideUpLink').velocity({color:color.ring},{duration:400});
 	$('span.active a, a.active,.top-bar-title,.top-bar-title-static').velocity({color:color.main},{duration:500});
 	$('input.button').velocity({'background-color':color.main},{duration:500});
 	$('.ghost-box').css('z-index',-1);
@@ -205,3 +205,45 @@ $('.submit-fail, .submit-success').click(function() {
 })
 
 
+// ---------------------------------------------------------------
+// SlideUpTopBar for Foundation top-bar
+// ---------------------------------------------------------------
+
+var $window = $(window);
+var didScroll;
+var lastScrollTop = 0;
+var scrollAmount = 10;          // Value of scroll amount
+var navbarHeight = $('.slideUp').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    "use strict";
+
+    var sup = $(window).scrollTop();
+
+    if(Math.abs(lastScrollTop - sup) <= scrollAmount) return;
+
+    if (sup > lastScrollTop && sup > navbarHeight){
+        // On Scroll Down
+        $('.slideUp').css({top: -$(window).outerHeight()});
+    } else {
+        // On Scroll Up
+        if(sup + $(window).height() < $(document).height()) {
+            $('.slideUp').css({top: 75});
+        }
+    }
+
+    lastScrollTop = sup;
+
+}

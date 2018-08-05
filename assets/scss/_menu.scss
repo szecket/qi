@@ -10,9 +10,28 @@ a {
     background: transparent;
   }
 }
+.slideUp {
+  font-size:1.4rem;
+  height: 7rem;
+  background: $nav-background;
+  opacity:0.8;
+  width: 100%;
+  color: white;
+  position: fixed;
+  top: 75px;
+  transition: top 0.4s ease-in-out;
+  z-index: 2;
+  text-align: center;
+}
+.slideIcon {
+  width:3rem;
+  margin:.5rem;
+  height:auto;
+}
+
 .top-bar {
   position:fixed;
-  z-index:2;
+  z-index:3;
   width:100% !important;
   display: flex;
   justify-content: space-between;

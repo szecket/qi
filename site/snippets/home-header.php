@@ -75,7 +75,7 @@
         </ul>
       </div>
     </div>
-    <div class='slideUp'>
+    <!-- <div class='slideUp'>
       <div>See us at <img class='slideIcon' src='https://s2018.siggraph.org/wp-content/uploads/2017/05/slide-1.png'> SIGGRAPH 2018! </div>
       <div>Qi is honored to present at <a class='slideUpLink' href='https://s2018.siggraph.org/presentation/?sess=sess379&id=sign_102'>SIGGRAPH Next</a> in Vancouver, BC on August 14.</div>
-    </div>
+    </div> -->

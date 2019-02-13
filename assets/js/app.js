@@ -2,6 +2,7 @@ $(document).foundation();
 sections = ['About','What','Who','Contact'];
 $(document).ready(function() {
 	logoFade();
+
 	// $('#fullpage').fullpage({
 	// 	// sectionsColor: ['#61bd6d', '#ffffff', '#ff0000'],
 	// 	anchors: sections,
@@ -82,6 +83,10 @@ function logoFade() {
 	random = Math.floor(Math.random()*(colors.length))
 	color = colors[random]
 	colorPicker = [color.circle1,color.circle2,color.circle3,color.circle4,color.circle5];
+	$('body').css('background-color','#888');
+	if ($(location).attr('href').indexOf("application")>=0){
+		return;
+	}
 	// console.log('color',random, color)
   $('.hamburger-menu').velocity({opacity:0},{duration:400,display:"none"});
 	$('.bg-cells *').velocity('stop');
@@ -102,7 +107,6 @@ function logoFade() {
 	$('svg #circle3').velocity({fill: rc3},{duration:1200});
 	$('svg #circle4').velocity({fill: rc4},{duration:1300});
 	$('.top-bar,.slideUp,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
-	$('body').css('background-color','#1e1e1e');
 	$('.bg-cells .i1')
 		.velocity('stop')
 		.velocity("fadeOut", 900 ,function(){

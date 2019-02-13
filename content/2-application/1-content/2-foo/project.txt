@@ -1,0 +1,13 @@
+Title: foo
+
+----
+
+Year: 
+
+----
+
+Text: 
+
+----
+
+Snippet: 

@@ -1,0 +1,13 @@
+Title: bar
+
+----
+
+Year: 
+
+----
+
+Text: this is the text for bar and it is good
+
+----
+
+Snippet: image-text

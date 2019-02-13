@@ -32,7 +32,10 @@ $('.bg-cells .i3').css('background-color', rc3);
 $('.bg-cells .i4').css('background-color', rc4);
 
 });
-
+if ($(location).attr('href').indexOf("application")>=0){
+	$('.bg-cells').hide();
+	$('.main-logo').hide();
+}
 $(document).on('update.zf.magellan', '[data-magellan]', function () {
 	$('[data-magellan] a').blur();
 	logoFade();
@@ -99,6 +102,7 @@ function logoFade() {
 	$('svg #circle3').velocity({fill: rc3},{duration:1200});
 	$('svg #circle4').velocity({fill: rc4},{duration:1300});
 	$('.top-bar,.slideUp,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
+	$('body').css('background-color','#1e1e1e');
 	$('.bg-cells .i1')
 		.velocity('stop')
 		.velocity("fadeOut", 900 ,function(){

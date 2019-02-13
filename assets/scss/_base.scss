@@ -130,7 +130,7 @@
 }
 
 .footer .heart {
-  /* The heart character of Arial Unicode MS looks just 
+  /* The heart character of Arial Unicode MS looks just
      surprisingly nice … */
   font-family: "Arial Unicode MS", Arial, sans-serif;
   display: inline-block;
@@ -153,7 +153,7 @@
   width:100%;
   position:absolute;
   top:80px;
-  z-index:1;
+  z-index:-1;
   left:0px;
   height:100%;
 }
@@ -179,7 +179,7 @@ section[data-magellan-target] {
   z-index:1;
 }
 #Contact {
-   margin-bottom: 0; 
+   margin-bottom: 0;
   }
 
 h1, h2, h3, h4 {
@@ -220,11 +220,11 @@ h1 {
 	  /* Set rules to fill background */
 	  min-height: 100%;
 	  min-width: 1024px;
-		
+
 	  /* Set up proportionate scaling */
 	  width: 100%;
 	  height: auto;
-		
+
 	  /* Set up positioning */
 	  position: fixed;
 	  top: 0;
@@ -287,4 +287,3 @@ p {
     background-size: 145px;
   }
 }
-

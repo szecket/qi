@@ -1,5 +1,0 @@
-Title: Download
-
-----
-
-Text: here's the file you download

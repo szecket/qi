@@ -1,5 +1,4 @@
 <?php if(! $page->redirect()): ?>
-  <?php snippet('header') ?>
 
     <main class="main" role="main">
 
@@ -10,12 +9,11 @@
         </div>
         <hr />
       </header>
-        
-      <div class="wrap wide">    
+
+      <div class="wrap wide">
         <?php snippet('showcase') ?>
       </div>
 
     </main>
 
-  <?php snippet('footer') ?>
 <?php endif ?>

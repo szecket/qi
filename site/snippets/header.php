@@ -7,19 +7,18 @@
 
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
+  <?= css('assets/css/foundation.min.css') ?>
   <?= css('assets/css/app.css') ?>
   <?php echo css('@auto') ?>
-  <!-- <?= css('assets/css/kstarter.css') ?> -->
-  <!-- <?= css('assets/css/jquery.fullpage.min.css') ?> -->
 
 </head>
 
 <body>
 <div class='bg-cells'>
   <div class='i1'></div>
-  <div class='i2'></div> 
-  <div class='i3'></div> 
-  <div class='i4'></div> 
+  <div class='i2'></div>
+  <div class='i3'></div>
+  <div class='i4'></div>
 </div>
   <div class="top-bar">
     <div class="top-bar-left">
@@ -67,5 +66,3 @@
         </ul>
       </div>
     </div>
-
-

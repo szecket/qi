@@ -7,10 +7,9 @@
 
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
+  <?= css('assets/css/foundation.min.css') ?>
   <?= css('assets/css/app.css') ?>
   <?php echo css('@auto') ?>
-  <!-- <?= css('assets/css/kstarter.css') ?> -->
-  <!-- <?= css('assets/css/jquery.fullpage.min.css') ?> -->
 
 </head>
 

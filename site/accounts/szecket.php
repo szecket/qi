@@ -7,7 +7,8 @@ email: szecket@magrittescow.com
 language: en
 role: admin
 history:
+  - application/download
+  - application/intro
+  - application/tutorials
+  - application/documentation
   - home/Contact
-  - home/blog
-  - home/news
-  - home/what

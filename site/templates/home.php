@@ -6,10 +6,8 @@
 	<?php endif ?>
 	</div>
 </div>
+	  	<?php snippet('magellan-sections',array('data' => $page->children())) ?>
 
-<div class="wrap wide">    
-  <?php snippet('magellan-sections',array('data' => $page->children())) ?>
-</div>
 
 
 <?php snippet('footer') ?>

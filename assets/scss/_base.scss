@@ -179,6 +179,9 @@ section[data-magellan-target] {
 	position:relative;
   margin-bottom:30rem;
   z-index:1;
+  &.tight {
+  margin-bottom:rem;
+  }
 }
 #Contact {
    margin-bottom: 0;

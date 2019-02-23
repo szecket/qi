@@ -26,14 +26,23 @@ if(isset($limit)) $sections = $sections->limit($limit);
     <?php if ($section->redirect()!='true'): ?>
     <section id="<?= $section->title()->html() ?>" data-magellan-target="<?= $section->title()->html() ?>">
       <main class='main' role='main'>
-        <div class='<?= $section->row()?> row' 
+        <div class='grid-container'>
+        	<div class=" grid-x grid-padding-x ">
+        		<div class='large-16 cell'>
+
+        <div class='<?= $section->row()?> '
           <?php if($section->background()): ?>
             style='background-color: <?= $section->background() ?>'
           <?php endif ?>
         >
+
           <div><?php snippet('section-title',array('data' => $section)); ?></div>
           <?php if($section->snippet() != '') snippet($section->snippet(),array('data' => $section)); ?>
         </div>
+        </div>
+        </div>
+        </div>
+
       </main>
     </section>
   <?php endif ?>

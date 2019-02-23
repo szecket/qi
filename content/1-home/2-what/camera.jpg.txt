@@ -1,8 +1,0 @@
-Caption: unkind camera
-
-----
-
-Text: 
-
-this is what I have to say about this bs.  And there you have it... I can now add text and a caption in the dashboard.  
-We should see what the content is, then figure out what the snippets will be, and make them accordingly.

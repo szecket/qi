@@ -1,9 +1,0 @@
-Title: News
-
-----
-
-Text: http://qitissue.blog
-
-----
-
-redirect: true

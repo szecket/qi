@@ -83,9 +83,13 @@ function logoFade() {
 	random = Math.floor(Math.random()*(colors.length))
 	color = colors[random]
 	colorPicker = [color.circle1,color.circle2,color.circle3,color.circle4,color.circle5];
-	$('body').css('background-color','#888');
 	if ($(location).attr('href').indexOf("application")>=0){
+		$('body').css('background-color','#27323a');
+		$('section').addClass('tight');
+		$('.ghost-box').removeClass('ghost-box');
 		return;
+	} else {
+		$('body').css('background-color','#000');
 	}
 	// console.log('color',random, color)
   $('.hamburger-menu').velocity({opacity:0},{duration:400,display:"none"});
@@ -111,7 +115,7 @@ function logoFade() {
 		.velocity('stop')
 		.velocity("fadeOut", 900 ,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
-			console.log('newBG',newBg);
+			console.log('newBG 1',newBg);
 			$('.bg-cells .i1').css("background-image", newBg);
 		})
 		.velocity("fadeIn", { duration: 1000 })
@@ -121,7 +125,7 @@ function logoFade() {
 		.velocity('stop')
 		.velocity("fadeOut", 1900,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
-			console.log('newBG',newBg);
+			console.log('newBG 2',newBg);
 			$('.bg-cells .i2').css("background-image", newBg);
 		})
 		.velocity("fadeIn", { delay:300, duration: 900 })
@@ -131,7 +135,7 @@ function logoFade() {
 		.velocity('stop')
 		.velocity("fadeOut", 300 ,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
-			console.log('newBG',newBg);
+			console.log('newBG 3',newBg);
 			$('.bg-cells .i3').css("background-image", newBg);
 		})
 		.velocity("fadeIn", { delay:350, duration: 900 })
@@ -141,7 +145,7 @@ function logoFade() {
 		.velocity('stop')
 		.velocity("fadeOut", 1550,function(){
 			newBg = background_images[Math.floor(Math.random()*background_images.length)];
-			console.log('newBG',newBg);
+			console.log('newBG 4',newBg);
 			$('.bg-cells .i4').css("background-image", newBg);
 		})
 		.velocity("fadeIn", { delay:800, duration: 800 })

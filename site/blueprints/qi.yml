@@ -1,0 +1,25 @@
+title: Home
+
+pages: true
+
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  type:
+    label: Background
+    type: select
+    options:
+      home: complex
+      secondary: flat
+
+
+  intro:
+    label: Intro
+    type:  textarea
+
+  text:
+    label: Text
+    type:  textarea

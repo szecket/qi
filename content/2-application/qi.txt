@@ -7,3 +7,7 @@ Intro: Bleh intro bleh
 ----
 
 Text: Blah text blah
+
+----
+
+Type: secondary

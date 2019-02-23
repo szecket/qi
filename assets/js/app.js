@@ -89,6 +89,7 @@ function logoFade() {
 		$('section').addClass('tight');
 		$('.ghost-box').addClass('line');
 		$('p').addClass('application');
+		$('h1').addClass('application');
 		$('.showcase-text').addClass('application');
 		$('.top-bar,.slideUp,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
 		return;

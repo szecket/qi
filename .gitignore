@@ -3,6 +3,7 @@ bower_components
 node_modules
 npm-debug.log
 kirby
-content
+content/
 thumbs
 szecket.php
+site/accounts/

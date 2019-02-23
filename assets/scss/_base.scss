@@ -158,6 +158,10 @@ a {
   z-index:-1;
   left:0px;
   height:100%;
+  &.line{
+    height:2px;
+    border-bottom:2px solid $light-gray;
+  }
 }
 
 .float-center {
@@ -246,6 +250,9 @@ h1 {
 p {
 	color: $white;
   font-size:$paragraph-font-size;
+  &.application {
+    color: $dark-gray;
+  }
 }
 .social-media {
   width:40px;
@@ -254,6 +261,9 @@ p {
 }
 .showcase-text {
 	color:$white;
+  &.application {
+    color: $dark-gray;
+  }
 }
 .showcase-image {
 	width:100%;

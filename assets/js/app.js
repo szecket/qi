@@ -84,9 +84,13 @@ function logoFade() {
 	color = colors[random]
 	colorPicker = [color.circle1,color.circle2,color.circle3,color.circle4,color.circle5];
 	if ($(location).attr('href').indexOf("application")>=0){
-		$('body').css('background-color','#27323a');
+		// $('body').css('background-color','#27323a');
+		$('body').css('background-color','#fff');
 		$('section').addClass('tight');
-		$('.ghost-box').removeClass('ghost-box');
+		$('.ghost-box').addClass('line');
+		$('p').addClass('application');
+		$('.showcase-text').addClass('application');
+		$('.top-bar,.slideUp,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
 		return;
 	} else {
 		$('body').css('background-color','#000');

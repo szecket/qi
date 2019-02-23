@@ -92,6 +92,8 @@ function logoFade() {
 		$('h1').addClass('application');
 		$('.showcase-text').addClass('application');
 		$('.top-bar,.slideUp,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});
+		$('.top-bar a, .slideUpLink').velocity({color:color.ring},{duration:400});
+		$('.top-bar a.is-active').velocity({color:color.main},{duration:400});
 		return;
 	} else {
 		$('body').css('background-color','#000');
@@ -157,6 +159,7 @@ function logoFade() {
 		.velocity({'background-color': rc4},{delay:700,duration:500});
 
 	$('.top-bar a, .slideUpLink').velocity({color:color.ring},{duration:400});
+	$('.top-bar a.is-active').velocity({color:color.main},{duration:400});
 	$('span.active a, a.active,.top-bar-title,.top-bar-title-static').velocity({color:color.main},{duration:500});
 	$('input.button').velocity({'background-color':color.main},{duration:500});
 	$('.ghost-box').css('z-index',-1);

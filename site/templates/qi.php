@@ -14,6 +14,9 @@
 	<?php else: ?>
 	  <?php snippet('magellan-sections',array('data' => $page->children())) ?>
 	<?php endif ?>
+	<br>
+	<br>
+	<br>
 </div>
 <?php $page->type() ?>
 

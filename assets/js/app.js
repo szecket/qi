@@ -90,6 +90,9 @@ function logoFade() {
 		$('.ghost-box').addClass('line');
 		$('p').addClass('application');
 		$('h1').addClass('application');
+		$('h2').addClass('application');
+		$('h3').addClass('application');
+		$('h4').addClass('application');
 		$('.showcase-text').addClass('application');
 		$('.showcase-caption').addClass('application');
 		$('.top-bar,.slideUp,.footer,.hamburger-bg').velocity({'background-color': color.bg},{duration:1400});

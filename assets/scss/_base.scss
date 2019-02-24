@@ -276,6 +276,9 @@ p {
 	color:$white;
 	margin-bottom: 2rem;
 	font-style: italic;
+  &.application {
+    color: $dark-gray;
+  }
 }
 .full-width {
   width:100%;

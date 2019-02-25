@@ -281,6 +281,10 @@ h5 {
     display:inline-block;
   }
 }
+h6 {
+  margin-top:4rem;
+  display:list-item;
+}
 .text {
 	color: $white;
   font-size:$paragraph-font-size;

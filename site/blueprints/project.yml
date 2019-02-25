@@ -10,7 +10,14 @@ files:
       label: Text
       type: textarea
 
-pages: true
+options:
+  template: true
+  status: true
+  url: false
+
+pages: 
+  template: project
+
 
 accept:
   mime: image/*, application/*

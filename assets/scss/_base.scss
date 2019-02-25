@@ -159,8 +159,10 @@ p a {
   left:0px;
   height:100%;
   &.line{
-    height:2px;
+    height:110%;
+    top:50px;
     border-bottom:2px solid $light-gray;
+    opacity:0.02;
   }
 }
 
@@ -258,6 +260,11 @@ p {
   &.application {
     color: $dark-gray;
   }
+}
+.side-nav {
+  height:100%;
+  overflow-y: auto;
+  background: grey;
 }
 .yo {
   display:none;

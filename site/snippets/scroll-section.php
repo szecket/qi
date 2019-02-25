@@ -24,6 +24,7 @@ if(isset($limit)) $sections = $sections->limit($limit);
 
   <?php foreach($sections as $section): ?>
 
+    <div class='yo'>FFS SCROLL-SECTION</div>
     <div class="section">
     <div class="callout light">
      <?php if($image = $section->images()->sortBy('sort', 'asc')->first()): $thumb = $image->crop(600, 600); ?>

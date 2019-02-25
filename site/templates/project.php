@@ -4,6 +4,7 @@
 
     <header class="wrap">
       <h1><?= $page->title()->html() ?></h1>
+      <div class='yo'>FFS project</div>
       <div class="intro text">
         <?= $page->year() ?>
       </div>

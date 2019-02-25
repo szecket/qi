@@ -30,14 +30,17 @@ if(isset($limit)) $sections = $sections->limit($limit);
         	<div class=" grid-x grid-padding-x ">
         		<div class='large-16 cell'>
 
-        <div class='<?= $section->row()?> '
-          <?php if($section->background()): ?>
-            style='background-color: <?= $section->background() ?>'
-          <?php endif ?>
-        >
-
+        <div>
           <div><?php snippet('section-title',array('data' => $section)); ?></div>
+          <div class='yo'>BEFORE SNIPPET</div>
           <?php if($section->snippet() != '') snippet($section->snippet(),array('data' => $section)); ?>
+          <?php if($section->hasChildren()):?>
+          <?php foreach($section->children() as $subPage): ?>
+              <?php if($subPage->snippet() != '') snippet($subPage->snippet(),array('data' => $subPage)); ?>
+            <?php endforeach ?>
+          <?php endif ?>
+
+          <div class='yo'>AFTER SNIPPET</div>
         </div>
         </div>
         </div>

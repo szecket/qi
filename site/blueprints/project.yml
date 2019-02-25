@@ -10,11 +10,12 @@ files:
       label: Text
       type: textarea
 
-pages: false
+pages: true
+
+accept:
+  mime: image/*, application/*
 
 fields:
-
-
   title:
     label: Title
     type:  text

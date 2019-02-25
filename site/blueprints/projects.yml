@@ -1,14 +1,16 @@
 title: Projects
 
-files: false
+files: true
+  sortable: true
 
 pages:
+  sortable: true
   template: project
 
-options: 
-  template: false  
-  status: false  
-  url: false  
+options:
+  template: true
+  status: true
+  url: false
 
 fields:
   title:

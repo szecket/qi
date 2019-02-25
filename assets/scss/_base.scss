@@ -178,7 +178,9 @@ p a {
 	margin-top:10rem;
   z-index:2;
 }
-
+.section {
+  margin-bottom:4rem;
+}
 section[data-magellan-target] {
 	position:relative;
   margin-bottom:30rem;
@@ -257,10 +259,34 @@ p {
     color: $dark-gray;
   }
 }
+.yo {
+  display:none;
+  color:white;
+  background: red;
+}
 .social-media {
   width:40px;
   height:40px;
   display:inline-block;
+}
+h1 {
+  figure {
+    text-align:center;
+  }
+}
+h5 {
+  display:inline-block;
+  figure {
+    margin-right:1rem;
+    display:inline-block;
+  }
+}
+.text {
+	color: $white;
+  font-size:$paragraph-font-size;
+  &.application {
+    color: $dark-gray;
+  }
 }
 .showcase-text {
 	color:$white;

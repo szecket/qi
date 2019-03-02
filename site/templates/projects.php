@@ -10,6 +10,8 @@
         </div>
         <hr />
       </header>
+
+
       <?php if($page->hasChildren()): ?>
       <? $children = $page->children(); ?>
       <?php foreach ($children as $key => $value): ?>

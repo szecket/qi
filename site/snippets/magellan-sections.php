@@ -26,6 +26,8 @@ if(isset($limit)) $sections = $sections->limit($limit);
     <?php if ($section->redirect()!='true'): ?>
     <section id="<?= $section->title()->html() ?>" data-magellan-target="<?= $section->title()->html() ?>">
       <main class='main' role='main'>
+        <div class='ghost-box'></div>
+
         <div class='grid-container'>
         	<div class=" grid-x grid-padding-x ">
         		<div class='large-16 cell'>
@@ -35,11 +37,10 @@ if(isset($limit)) $sections = $sections->limit($limit);
           <div class='yo'>BEFORE SNIPPET</div>
           <?php if($section->snippet() != '') snippet($section->snippet(),array('data' => $section)); ?>
           <?php if($section->hasChildren()):?>
-          <?php foreach($section->children() as $subPage): ?>
+            <?php foreach($section->children() as $subPage): ?>
               <?php if($subPage->snippet() != '') snippet($subPage->snippet(),array('data' => $subPage)); ?>
             <?php endforeach ?>
           <?php endif ?>
-
           <div class='yo'>AFTER SNIPPET</div>
         </div>
         </div>

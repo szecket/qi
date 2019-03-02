@@ -1,4 +1,3 @@
-<div class='ghost-box'></div>
 <?php foreach($data->videos()->sortBy('sort', 'asc') as $video): ?>
   <div class="show-for-medium cf grid-x grid-padding-x">
     <div class='large-8 cell'>
